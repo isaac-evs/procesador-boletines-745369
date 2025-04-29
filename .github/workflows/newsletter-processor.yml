@@ -4,11 +4,13 @@ on:
   push:
     branches: [main]
     paths:
+      - ".github/workflows/newsletter-processor.yml"
       - "newsletter-processor/**"
   pull_request:
     branches: [main]
     paths:
       - "newsletter-processor/**"
+  workflow_dispatch:
 
 jobs:
   build:
